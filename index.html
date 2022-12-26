@@ -8,8 +8,38 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    
+    <header>
+        <form id="form">
+            <input type="search" name="search" id="search">
+            <button>Search</button>
+        </form>
+    </header>
+
+    <section class="result-section">
+        <div class="weather-status">
+            <div class="weather-status--today">
+                <h2 class="day-heading">today</h2>
+                <small class="weather-status--city---name">berlin</small>
+                <span class="weather-status--degree">20 &deg;</span>
+                <img src="images/brightness-high.svg" alt="">
+                <div class="small-status">
+                    <small class="small-status--text">sunny</small>
+                    <small class="small-status--wind">wind: <span>20 km/h</span></small>
+                </div>
+            </div>
+            
+                <div class="weather-status--tomorrow">
+                    <h2 class="day-heading">tomorrow</h2>
+                    <small class="weather-status--city---name">london</small>
+                    <span class="weather-status--degree">13 &deg;</span>
+                    <img src="images/brightness-high.svg" alt="">
+                    <div class="small-status">
+                        <small class="small-status--text">rainy</small>
+                        <small class="small-status--wind">wind: <span>26 km/h</span></small>
+                    </div>
+                </div>
+            </div>
+    </section>
     <script src="app.js"></script>
 </body>
 </html>
