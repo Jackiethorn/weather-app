@@ -1,44 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <form id="form">
-            <input type="search" name="search" id="search">
-            <button>Search</button>
-        </form>
+    <header class="header">
+        <div class="wrapper">
+            <div class="searchbar">
+                <form id="form" class="form">
+                    <input type="search" name="search" id="search" placeholder="search a city" />
+                    <button class="button-30" role="button">Search</button>
+                </form>
+            </div>
+        </div>
+        <div class="header-border"></div>
     </header>
 
     <section class="result-section">
-        <div class="weather-status">
-            <div class="weather-status--today">
-                <h2 class="day-heading">today</h2>
-                <small class="weather-status--city---name">berlin</small>
-                <span class="weather-status--degree">20 &deg;</span>
-                <img src="images/brightness-high.svg" alt="">
-                <div class="small-status">
-                    <small class="small-status--text">sunny</small>
-                    <small class="small-status--wind">wind: <span>20 km/h</span></small>
+        <div class="wrapper">
+            <div class="weather-status">
+                <div class="weather-status--today">
+                    <h2 class="day-heading">today</h2>
+                    <small class="weather-status--city---name">berlin</small>
+                    <div class="inside-wrapper">
+                        <div class="degree-wrapper">
+                            <span class="weather-status--degree">20</span>
+                            <img src="images/brightness-high.svg" alt="" />
+                        </div>
+                        <div class="small-status">
+                            <small class="small-status--text">sunny</small>
+                            <small class="small-status--wind">wind: <span>20 km/h</span></small>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
-                <div class="weather-status--tomorrow">
-                    <h2 class="day-heading">tomorrow</h2>
-                    <small class="weather-status--city---name">london</small>
-                    <span class="weather-status--degree">13 &deg;</span>
-                    <img src="images/brightness-high.svg" alt="">
+        </div>
+        <div class="middle-border"></div>
+        <div class="wrapper">
+            <div class="weather-status--tomorrow">
+                <h2 class="day-heading">tomorrow</h2>
+                <small class="weather-status--city---name">london</small>
+                <div class="inside-wrapper">
+                    <div class="degree-wrapper">
+                        <span class="weather-status--degree">13</span>
+                        <img src="images/brightness-high.svg" alt="" />
+                    </div>
                     <div class="small-status">
                         <small class="small-status--text">rainy</small>
                         <small class="small-status--wind">wind: <span>26 km/h</span></small>
                     </div>
                 </div>
             </div>
+        </div>
+
+
     </section>
     <script src="app.js"></script>
 </body>
